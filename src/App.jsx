@@ -9,7 +9,7 @@ function usePrevious(value) {
   const ref = useRef();
   useEffect(() => {
     ref.current = value;
-    
+
   });
   return ref.current;
 }
@@ -110,7 +110,6 @@ function App(props) {
     if (isDarkMode) {
       const script = document.createElement("script"); // Sensitive
       script.src = "https://cdnexample.com/dark-mode-styles.js";
-      // script.integrity = getIntegrity();
       document.head.appendChild(script);
     }
   }, []);
